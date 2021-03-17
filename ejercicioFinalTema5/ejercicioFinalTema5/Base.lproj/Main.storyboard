@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ejercicioFinalTema5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escriba un número para conocer sus divisores" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JT-jV-IX4">
+                                <rect key="frame" x="15" y="57.000000000000007" width="384" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.11528132889999999" green="0.17304506119999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3kR-fw-MGo">
+                                <rect key="frame" x="15" y="85.333333333333329" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1G-LN-Kxb">
+                                <rect key="frame" x="15" y="134.33333333333334" width="384" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.11528132889999999" green="0.17304506119999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-33-bxc">
+                                <rect key="frame" x="30" y="156.33333333333334" width="354" height="4"/>
+                                <color key="progressTintColor" red="0.11528132889999999" green="0.17304506119999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXt-Wn-ct8">
+                                <rect key="frame" x="110" y="195.33333333333334" width="194" height="30"/>
+                                <color key="backgroundColor" red="0.11528132889999999" green="0.17304506119999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Sue-2Y-lrA"/>
+                                </constraints>
+                                <state key="normal" title="Comenzar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPreseed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwQ-EC-Yod"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UV-Rk-99J">
+                                <rect key="frame" x="15" y="254.33333333333334" width="384" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.11528132889999999" green="0.17304506119999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="q1G-LN-Kxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3Qe-gE-TOk"/>
+                            <constraint firstItem="3kR-fw-MGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="4fU-pJ-g2u"/>
+                            <constraint firstItem="1UV-Rk-99J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8Dd-sz-k6H"/>
+                            <constraint firstItem="q1G-LN-Kxb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93o-oZ-MXk"/>
+                            <constraint firstItem="2JT-jV-IX4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="BIm-QF-7ba"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q1G-LN-Kxb" secondAttribute="trailing" constant="15" id="EgP-Jz-fuZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXt-Wn-ct8" secondAttribute="trailing" constant="110" id="ISS-Ho-x2q">
+                                <variation key="heightClass=compact-widthClass=regular" constant="280"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nkh-33-bxc" secondAttribute="trailing" constant="30" id="InX-xM-Vx7"/>
+                            <constraint firstItem="nkh-33-bxc" firstAttribute="top" secondItem="q1G-LN-Kxb" secondAttribute="bottom" constant="22" id="KY8-BN-4pT"/>
+                            <constraint firstItem="nkh-33-bxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cC7-AU-0Bl"/>
+                            <constraint firstItem="JXt-Wn-ct8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cvJ-Tl-KlJ"/>
+                            <constraint firstItem="JXt-Wn-ct8" firstAttribute="top" secondItem="nkh-33-bxc" secondAttribute="bottom" constant="35" id="hfK-U5-V3D"/>
+                            <constraint firstItem="q1G-LN-Kxb" firstAttribute="top" secondItem="3kR-fw-MGo" secondAttribute="bottom" constant="15" id="jkS-Y0-vXp"/>
+                            <constraint firstItem="3kR-fw-MGo" firstAttribute="top" secondItem="2JT-jV-IX4" secondAttribute="bottom" constant="8" symbolic="YES" id="lZr-KL-rl9"/>
+                            <constraint firstItem="3kR-fw-MGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n31-4E-6As"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2JT-jV-IX4" secondAttribute="trailing" constant="15" id="neN-TY-ddT"/>
+                            <constraint firstItem="nkh-33-bxc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rCR-zR-ipI"/>
+                            <constraint firstItem="1UV-Rk-99J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rCe-PR-5zn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1UV-Rk-99J" secondAttribute="trailing" constant="15" id="scY-pA-jD6"/>
+                            <constraint firstItem="1UV-Rk-99J" firstAttribute="top" secondItem="JXt-Wn-ct8" secondAttribute="bottom" constant="29" id="smr-tO-TzI"/>
+                            <constraint firstItem="JXt-Wn-ct8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="tID-N6-Xh4">
+                                <variation key="heightClass=compact-widthClass=regular" constant="280"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3kR-fw-MGo" secondAttribute="trailing" constant="15" id="u1H-Kq-YLC"/>
+                            <constraint firstItem="2JT-jV-IX4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="wfP-p8-7Xf"/>
+                            <constraint firstItem="2JT-jV-IX4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zWS-Qr-bRO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelDivisors" destination="1UV-Rk-99J" id="yfV-ZX-Tlx"/>
+                        <outlet property="labelPercentage" destination="q1G-LN-Kxb" id="2YG-r7-gJy"/>
+                        <outlet property="progressview" destination="nkh-33-bxc" id="jAd-Xp-dtk"/>
+                        <outlet property="textfield" destination="3kR-fw-MGo" id="2v3-lB-cIy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
